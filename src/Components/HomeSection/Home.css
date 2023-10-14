@@ -1,0 +1,14 @@
+.des{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+.des img{
+  max-width: 100%;
+}
+.des h1{
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}

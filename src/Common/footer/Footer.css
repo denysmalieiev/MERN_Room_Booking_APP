@@ -1,0 +1,39 @@
+footer {
+  background-color: #000;
+  color: white;
+  margin-top: 50px;
+  padding: 50px 0;
+}
+footer .grid {
+  grid-template-columns: repeat(1, 1fr);
+}
+footer h2 {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+footer p {
+  font-size: 13px;
+  opacity: 0.6;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+footer ul li a {
+  opacity: 0.7;
+  color: white;
+  font-size: 13px;
+}
+footer ul li {
+  margin-bottom: 10px;
+}
+.legal {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  border-top: 1px solid rgb(63, 62, 62);
+  color: white;
+}
+.legal p {
+  opacity: 0.5;
+}
+
