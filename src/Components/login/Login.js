@@ -17,9 +17,14 @@ const Login = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(formData),
-      });
+      })
+      console.log(response);
       if (response.ok) {
         console.log('Sign-in successful!');
+        if (response.data){
+          console.log(response);
+          localStorage.setItem("currentuser",response);
+        }
         window.location.href = 'dashboard'
       } else {
         console.error('Sign-in failed.');

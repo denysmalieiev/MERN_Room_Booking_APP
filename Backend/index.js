@@ -42,12 +42,14 @@ app.post('/api/sin', async (req, res) => {
     const collection = database.collection('users');
 
     const user = await collection.findOne({ email });
+    
     if (user.password === password) {
       res.json({ message: 'Sign-in successful' });
       
     } else {
       res.status(401).json({ error: 'Invalid credentials' });
     }
+    res.send(user.email);
   } catch (error) {
     console.error('Error:', error);
     res.status(500).json({ error: 'Sign-in failed' });
@@ -57,8 +59,8 @@ app.post('/api/sin', async (req, res) => {
 });
 
 //dashboard details
-app.post('/api/userdata', async (req, res) => {
-  const {email} = req.user.email;
+app.get('/api/userdata', async (req, res) => {
+  const {email} = window.localStorage.getItem("currentuser");
   const uri = 'mongodb+srv://midhun:midhunvs21@cluster0.m4xcgpo.mongodb.net';
   const client = new MongoClient(uri, { useUnifiedTopology: true });
   
@@ -74,7 +76,7 @@ app.post('/api/userdata', async (req, res) => {
       number: user.number,
       email: user.email,
     };
-    res.json({userData});
+    res.send(userData);
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal server error' });
