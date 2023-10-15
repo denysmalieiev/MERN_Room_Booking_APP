@@ -8,10 +8,10 @@ const Home = () => {
         <Sidebar />
         <section className="content">
             <main>
-                <div class="header">
-                    <div class="left">
+                <div className="header">
+                    <div className="left">
                         <h1>Rent Room</h1>
-                        <ul class="breadcrumb">
+                        <ul className="breadcrumb">
                             <li><a href="#">
                                 Rent Now
                             </a></li>
@@ -19,10 +19,10 @@ const Home = () => {
                     </div>
                 </div>
 
-                <ul class="insights">
+                <ul className="insights">
                     <li>
                         <box-icon name='add-to-queue' size='35px' color='blue'></box-icon>
-                        <span class="info">
+                        <span className="info">
                             <h3>
                                 Add Room
                             </h3>
@@ -30,7 +30,7 @@ const Home = () => {
                     </li>
                     <li>
                         <box-icon type='solid' name='edit'size='35px' color='green'></box-icon>
-                        <span class="info">
+                        <span className="info">
                             <h3>
                                 Update Room
                             </h3>
@@ -38,7 +38,7 @@ const Home = () => {
                     </li>
                     <li>
                         <box-icon name='message-square-x' type='solid' size='35px' color='red'></box-icon>
-                        <span class="info">
+                        <span className="info">
                             <h3>
                                 Delete Room
                             </h3>
@@ -46,36 +46,36 @@ const Home = () => {
                     </li>
                 </ul>
 
-                <div class="bottom-data">
-                    <div class="orders">
-                        <div class="header">
-                            <i class='bx bx-receipt'></i>
+                <div className="bottom-data">
+                    <div className="orders">
+                        <div className="header">
+                            <i className='bx bx-receipt'></i>
                             <h3>Your Rooms</h3>
-                            <i class='bx bx-filter'></i>
-                            <i class='bx bx-search'></i>
+                            <i className='bx bx-filter'></i>
+                            <i className='bx bx-search'></i>
                         </div>
                         
-                        <div class="card">
-                            <div class="image">
+                        <div className="card">
+                            <div className="image">
                                 <img src="images/gallery-2.jpg" />
                             </div>
-                            <div class="title">
+                            <div className="title">
                                 <h1>Chennai</h1>
                             </div>
-                            <div class="des">
+                            <div className="des">
                                 Min : 1 day<br />Max : 30 days<br />Cost per day : Rs.1000
                                 <button>View</button>
                             </div>
                         </div>
 
-                        <div class="card">
-                            <div class="image">
+                        <div className="card">
+                            <div className="image">
                                 <img src="images/popular3.jpg" />
                             </div>
-                            <div class="title">
+                            <div className="title">
                                 <h1>Coimbatore</h1>
                             </div>
-                            <div class="des">
+                            <div className="des">
                                 Min : 1 day<br />Max : 30 days<br />Cost per day : Rs.1050
                                 <button>View</button>
                             </div>

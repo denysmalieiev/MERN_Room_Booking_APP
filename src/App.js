@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Contact from "./Components/Contact/Contact"
 import Login from "./Components/login/Login"
 import Register from "./Components/login/Register"
-import Dashb from "./Components/Dashboard/Dashboard"
+import Dashboard from "./Components/Dashboard/Dashboard"
 import Book from "./Components/Dashboard/Book"
 import Rent from "./Components/Dashboard/Rent"
 function App() {
@@ -20,7 +20,7 @@ function App() {
           <Route path='/contact' component={Contact} />
           <Route path='/sign-in' component={Login} />
           <Route path='/Register' component={Register} />
-          <Route path='/Dashboard' component={Dashb} />
+          <Route path='/Dashboard' component={Dashboard} />
           <Route path='/Book' component={Book} />
           <Route path='/Rent' component={Rent} />
         </Switch>

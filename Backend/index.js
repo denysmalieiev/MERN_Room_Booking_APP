@@ -60,7 +60,7 @@ app.post('/api/sin', async (req, res) => {
 app.post('/api/userdata', async (req, res) => {
   const {email} = req.user.email;
   const uri = 'mongodb+srv://midhun:midhunvs21@cluster0.m4xcgpo.mongodb.net';
-  const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+  const client = new MongoClient(uri, { useUnifiedTopology: true });
   
   try {
     await client.connect();
@@ -79,12 +79,34 @@ app.post('/api/userdata', async (req, res) => {
     console.error(error);
     res.status(500).json({ error: 'Internal server error' });
   }
+  finally {
+    await client.close();
+  }
 });
-
-
 
 
 //port
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+
+/*cads
+app.get('/api/cards', async (req, res) => {
+  const uri = 'mongodb+srv://midhun:midhunvs21@cluster0.m4xcgpo.mongodb.net';
+  const client = new MongoClient(uri, { useUnifiedTopology: true });
+  try {
+    // Fetch card data from the database
+    await client.connect();
+    const database = client.db('bookingdatas');
+    const collection = database.collection('rooms');
+    const rooms = await collection.find({title: "Chennai"});
+    res.json(rooms);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+  finally {
+    await client.close();
+  }
+});*/
