@@ -2,7 +2,7 @@
 - Round 3: SaaS Application Development Test - Submission
 - Project Title: Guest Room Booking Application
 - Role: MERN Stack Developer
-This project was done in React Js(Frontend) , Node Js(Backend) and MongoDB Atlas(Database).
+- This project was done in React Js(Frontend) , Node Js(Backend) and MongoDB Atlas(Database). 
 
 # To Run
 1. command "npm start" in the parent folder.
