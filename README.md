@@ -16,6 +16,6 @@ This project was done in React Js , Node Js and MongoDB Atlas.
 
 
 # Creator
-Name : Midhun V S
-Email: midhun890390@gmail.com
-Mobile: 8903909217
+- Name : Midhun V S
+- Email: midhun890390@gmail.com
+- Mobile: 8903909217
