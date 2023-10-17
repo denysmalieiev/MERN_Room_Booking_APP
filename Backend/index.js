@@ -1,4 +1,4 @@
-// server.js
+// Backend server
 const express = require('express');
 const app = express();
 const port = 3001;
@@ -7,19 +7,19 @@ app.use(express.json());
 const cors = require('cors');
 app.use(cors());
 
-//register
+//register details
 app.post('/api/reg', async (req, res) => {
   const userData = req.body;
-
+  //database string
   const uri = 'mongodb+srv://midhun:midhunvs21@cluster0.m4xcgpo.mongodb.net';
   const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
   try {
     await client.connect();
-    const database = client.db('bookingdatas');
-    const collection = database.collection('users');
+    const database = client.db('bookingdatas'); //database
+    const collection = database.collection('users'); //collection
     
-    const result = await collection.insertOne(userData);
+    const result = await collection.insertOne(userData); //inserting data
     
     res.json({ message: 'Registration successful', insertedId: result.insertedId });
   } catch (error) {
@@ -41,7 +41,7 @@ app.post('/api/sin', async (req, res) => {
     const database = client.db('bookingdatas');
     const collection = database.collection('users');
 
-    const user = await collection.findOne({ email });
+    const user = await collection.findOne({ email });//find details with email
     
     if (user.password === password) {
       res.json({ message: 'Sign-in successful' });
