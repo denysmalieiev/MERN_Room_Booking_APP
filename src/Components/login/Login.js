@@ -11,7 +11,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('/api/sin', {
+      const response = await fetch('/api/sin', { //fetch from backend
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
