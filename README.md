@@ -28,7 +28,7 @@ https://github.com/vsmidhun21/Guest_Room_Booking_Application/assets/114806736/d0
 
 
 # Creator
-- Name : Midhun V S
+- Name: Midhun V S
 - Email: midhun890390@gmail.com
 - Mobile: 8903909217
 - Website: https://vsmidhun21.github.io/portfolio/
