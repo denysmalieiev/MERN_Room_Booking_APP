@@ -32,7 +32,7 @@ https://github.com/vsmidhun21/Guest_Room_Booking_Application/assets/114806736/d0
 - Name: Midhun V S
 - Email: midhun890390@gmail.com
 - Mobile: 8903909217
-- Website: https://vsmidhun21.github.io/portfolio/
+- Website: <a href="https://vsmidhun21.github.io/portfolio", target="_blank"> vsmidhun21.github.io/portfolio </a>
 - Institution: Ramco Institute of Technology
 - Degree: B.E. Electronics and Communication Engineering
 
